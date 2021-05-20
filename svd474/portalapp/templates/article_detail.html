@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">{{ article.title }}</h1>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Опубликовано {{ article.release_date }}</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="{{ article.image.url }}" alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead">{{ article.content }}</p>
+
+        <hr>
+
+      </div>
+
+
+{% endblock content %}
